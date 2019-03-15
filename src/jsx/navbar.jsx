@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Navbar, Nav } from "react-bootstrap";
+import Icon from "../resources/pella.jpg";
 
 import "../../css/navbar.css";
 
@@ -13,7 +14,7 @@ class PellaNavbar extends Component {
       <Navbar className="pella-navbar" fixed="top">
         <Navbar.Brand href="index.html">
           <img
-            src="../../../resources/pella.jpg"
+            src={Icon}
             width="30"
             height="30"
             className="d-inline-block align-top"

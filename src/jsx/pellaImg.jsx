@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../../css/image.css";
+import { Container, Row, Col, Image } from "react-bootstrap";
+import Icon from "../resources/pella_logo.png";
 
 class PellaImage extends Component {
   constructor(props) {
@@ -7,14 +9,14 @@ class PellaImage extends Component {
   }
 
   render() {
-    return(    
-      <div className="container">
-        <div className="row">
-          <div className="col-12 center-text">
-              <img id="pella-logo" src="../resources/pella_logo.png" className="rounded mx-auto d-block pella-img"/>
-          </div>
-        </div>
-      </div>
+    return(
+      <Container className="pella-img">
+        <Row>
+          <Col>
+            <Image className="text-center" src={Icon} rounded fluid />
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }
