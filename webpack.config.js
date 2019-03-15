@@ -44,6 +44,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebPackPlugin({
+      template: path.resolve(__dirname, 'src/html', 'releases.html'),
+      filename: "./releases.html"
+    }),
+    new HtmlWebPackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
       filename: "./index.html"
     })

@@ -10,8 +10,8 @@ class PellaNavbar extends Component {
 
   render() {
     return (
-      <Navbar className="pella-navbar">
-        <Navbar.Brand className="navbar-txt" href="#home">
+      <Navbar className="pella-navbar" fixed="top">
+        <Navbar.Brand href="index.html">
           <img
             src="../../../resources/pella.jpg"
             width="30"
@@ -23,6 +23,9 @@ class PellaNavbar extends Component {
         <Navbar.Collapse>
           <Nav className="mr-auto">
             <Nav.Link className="navbar-txt">Pella Studio</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="releases.html">Heroes and Creatures</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
