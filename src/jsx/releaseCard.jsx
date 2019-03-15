@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import "../../css/releaseCard.css";
 
+import ReleaseLink from "./releaseLinks";
+
 class ReleaseCard extends Component {
   constructor(props) {
     super(props);
@@ -16,6 +18,7 @@ class ReleaseCard extends Component {
               <Card.Body>
                 <Card.Title>Liste des releases</Card.Title>
                 <hr/>
+                <ReleaseLink />
               </Card.Body>
             </Card>
           </Col>

@@ -43,6 +43,17 @@ module.exports = {
       {
         test: /\.(png|jpg|so|dll|exe)$/,
         use: ["file-loader"]
+      },
+      {
+        test: /\.(so|dll|tar.gz|zip)$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]"
+            }
+          }
+        ]
       }
     ]
   },
