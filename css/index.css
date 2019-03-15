@@ -7,3 +7,14 @@
     margin-bottom: 4rem;
     width: 75%;
 }
+
+#card-container {
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+}
+
+#releases-card {
+    background-color: #ce069c;
+    border-color: #ff6600;
+    border-width: 6px;
+}
