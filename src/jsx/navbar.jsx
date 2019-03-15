@@ -25,8 +25,6 @@ class PellaNavbar extends Component {
             <Nav.Link className="navbar-txt">Pella Studio</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-
-
       </Navbar>
     );
   }
