@@ -1,6 +1,5 @@
 const path = require("path");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const CleanWebPackPlugin = require("clean-webpack-plugin");
 const outputDirectory = "dist";
 
 module.exports = {
@@ -50,7 +49,7 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "[name].[ext]"
+              name: "[path][name].[ext]"
             }
           }
         ]

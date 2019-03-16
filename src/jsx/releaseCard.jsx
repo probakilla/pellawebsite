@@ -18,7 +18,7 @@ class ReleaseCard extends Component {
               <Card.Body>
                 <Card.Title>Liste des releases</Card.Title>
                 <hr/>
-                <ReleaseLink />
+                <ReleaseLink version="v0.0.1"/>
               </Card.Body>
             </Card>
           </Col>
